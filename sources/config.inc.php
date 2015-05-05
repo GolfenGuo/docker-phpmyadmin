@@ -46,11 +46,12 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
  */
 
 /* User used to manipulate with storage */
-$cfg['Servers'][$i]['controluser'] = "$PMA_USERNAME";
-$cfg['Servers'][$i]['controlpass'] = "$PMA_PASSWORD";
+$cfg['Servers'][$i]['user'] = "$PMA_USERNAME";
+$cfg['Servers'][$i]['pass'] = "$PMA_PASSWORD";
+$cfg['Servers'][$i]['only_db'] = "$PMA_INSTANCE_NAME";
 
 /* Storage database and tables */
-$cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
+$cfg['Servers'][$i]['pmadb'] = '';
 $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
 $cfg['Servers'][$i]['relation'] = 'pma__relation';
 $cfg['Servers'][$i]['table_info'] = 'pma__table_info';
