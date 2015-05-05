@@ -14,12 +14,12 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie
  */
-$cfg['blowfish_secret'] = "$PMA_SECRET"; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = "THISisDANGEROUS"; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /*
  * Absolute URI
  */
-$cfg['PmaAbsoluteUri'] = "$PMA_URI";
+$cfg['PmaAbsoluteUri'] = "";
 
 /*
  * Servers configuration
@@ -46,9 +46,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
  */
 
 /* User used to manipulate with storage */
-$cfg['Servers'][$i]['user'] = "$PMA_USERNAME";
-$cfg['Servers'][$i]['pass'] = "$PMA_PASSWORD";
-$cfg['Servers'][$i]['only_db'] = "$PMA_INSTANCE_NAME";
+$cfg['Servers'][$i]['only_db'] = "$MYSQL_INSTANCE_NAME";
 
 /* Storage database and tables */
 $cfg['Servers'][$i]['pmadb'] = '';
